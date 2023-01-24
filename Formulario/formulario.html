@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basilis Tecnologic | República Dominicana</title>
+        <link rel="stylesheet" href="style/formulario.css">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/dc10278212.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        function confirmacion() {
+            var respuesta = confirm("Gracias por su compra!");
+            if (respuesta == true)  {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+
+    <body>
+        <div class="formulario">
+            <div class="logo">
+                <div class="contenedor-logo">
+                    <div class="titulo-logo">
+                        <h3>
+                            Basilis Technologic
+                        </h3>
+                    </div>
+                    <div class="gema-logo">
+                        <i class="fa-sharp fa-solid fa-gem"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-formulario">
+                <form action="">
+                    <label for="nombre">Nombre/s</label><br>    
+                    <input type="text" id="nombre" name="nombre"><br>
+                    <label for="apellido">Apellido/s</label><br>
+                    <input type="text" id="apellido" name="apellido"><br>
+                    <label for="e-mail">Correo electrónico</label><br>
+                    <input type="e-mail" name="e-mail" placeholder="ejemplo@gmail.com"><br>
+                    <label for="pwd">Número de identificación</label><br>
+                    <input type="password" id="pwd" name="pwd" placeholder="**** **** **** ****"><br>
+                    <section>
+                        <img src="img/visa.jpg" alt="">
+                        <img src="img/Mastercard_2019_logo.svg.png" alt="">
+                        <img src="img/que-es-paypal.webp" alt="">
+                    </section>
+                    <label for="date">Fecha de solicitud</label><br>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="area">Area</label><br>
+                    <input type="radio" id="comercial" name="area" value="Comercial">
+                    <label for="comercial">Comercial</label><br>
+                    <input type="radio" id="logística" name="area" value="Logística">
+                    <label for="logística">Logística</label><br>
+                    <input type="radio" id="contable" name="area" value="Contable">
+                    <label for="contable">Contable</label><br>
+                    <input type="submit" value="Comprar" name="comprar" class="sombra" onclick="return confirmacion()">
+                    <input type="reset" class="sombra">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

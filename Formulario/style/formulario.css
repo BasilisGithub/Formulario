@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sofia Sans', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, aqua, white, royalblue, grey);
+    background-repeat: no-repeat;
+    background-size: 1366px 658px;
+}
+
+.formulario {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.titulo-logo {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding-top: 1px;
+    margin-top: 30px;
+}
+
+.gema-logo {
+    color:rgb(10, 189, 243);
+    font-size: 25px;
+    margin-top: -25px;
+    padding-bottom: 10px;
+}
+
+.contenedor-formulario label {
+    color: white;
+    text-align: center;
+}
+
+.contenedor-formulario input {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+#logística {
+    margin-left: -5px;
+}
+
+#contable {
+    margin-left: -5px;
+}
+
+section img {
+    width: 30px;
+    padding-top: -15px;
+    padding-bottom: 10px;
+}
+
+.sombra:hover {
+    color: rgb(255, 255, 255);
+    background-color: royalblue;
+    transition: 0.2s;
+}
