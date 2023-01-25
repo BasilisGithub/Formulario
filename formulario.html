@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basilis Tecnologic | República Dominicana</title>
+        <link rel="stylesheet" href="style/formulario.css">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/dc10278212.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+        <style>
+            .contenedor-formulario{
+                display:grid;
+                gap:10px;
+                grid-template-columns: auto auto;
+                padding: 50px;
+            }
+
+            input[type="radio"]{
+                width: auto;
+            }
+
+            h4{
+                color:white;
+            }
+
+            .nombre{
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+
+            .apellido{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+            .email{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .numero_identificacion{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .fecha_solicitud{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .area_compra{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .opciones_pago{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .botones{
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .contenedor-logo{
+                padding-left: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="formulario">
+            <div class="logo">
+                <div class="contenedor-logo">
+                    <div class="titulo-logo">
+                        <h3>
+                            Basilis Technologic
+                        </h3>
+                    </div>
+                    <div class="gema-logo">
+                        <i class="fa-sharp fa-solid fa-gem"></i>
+                    </div>
+                </div>
+            </div>
+                <form class="contenedor-formulario">
+                    <div class="nombre">
+                        <label for="nombre">Nombre/s</label><br>    
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="apellido">
+                        <label for="apellido">Apellido/s</label><br>
+                        <input type="text" id="apellido" name="apellido">
+                    </div>
+                    <div class="email">
+                        <label for="email">Correo electrónico</label><br>
+                        <input type="email" name="email" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="numero_identificacion">
+                        <label for="pwd">Número de identificación</label><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="**** **** **** ****">
+                    </div>
+                    <section class="opciones_pago">
+                        <img src="img/visa.jpg" alt="">
+                        <img src="img/Mastercard_2019_logo.svg.png" alt="">
+                        <img src="img/que-es-paypal.webp" alt="">
+                    </section>
+                    <div class="fecha_solicitud">
+                        <label for="date">Fecha de solicitud</label><br>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="area_compra">
+                        <h4>Area</h4>
+
+                        <input type="radio" id="comercial" name="area" value="Comercial">
+                        <label for="comercial">Comercial</label>
+                        <br>
+
+                        <input type="radio" id="logística" name="area" value="Logística">
+                        <label for="logística">Logística</label>
+                        <br>
+                   
+                        <input type="radio" id="contable" name="area" value="Contable">
+                        <label for="contable">Contable</label>
+                    </div>
+                        <div class="botones">
+                            <input type="submit" value="Comprar" name="comprar" class="sombra" onclick="confirm('Gracias por su compra!')">
+                            <input type="reset" class="sombra">
+                        </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
